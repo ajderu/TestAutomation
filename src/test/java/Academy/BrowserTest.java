@@ -17,7 +17,7 @@ public class BrowserTest {
 	public void getData()
 	{
 		System.out.println("Hello Guys");
-		System.setProperty("webdriver.chrome.driver", "$(Build.ArtifactStagingDirectory)/TestAutomation/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/TestAutomation/chromedriver");
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://aj-webapp-yaml.azurewebsites.net/");
 		String text =driver.findElement(By.cssSelector("h2")).getText();
