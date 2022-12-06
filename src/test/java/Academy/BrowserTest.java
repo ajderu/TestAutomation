@@ -22,7 +22,7 @@ public class BrowserTest {
 		driver.get("https://aj-webapp-yaml.azurewebsites.net/");
 		String text =driver.findElement(By.cssSelector("h2")).getText();
 		System.out.println(text);
-		Assert.assertTrue(text.equalsIgnoreCase("Hello World!"));
+		Assert.assertTrue(text.equalsIgnoreCase("Hello World! ajderu/pipelines-java repo"));
 		driver.close();
 	
 		
